@@ -11,6 +11,7 @@ img {
      display: block;
     width: 100%;
     height: auto;
+    
 }
 body {
    font-family: "Roboto", sans-serif;
@@ -70,8 +71,7 @@ button{
     }
 }
 
-
-    /* header */
+ /* header */
 .header {
     border-bottom: 1px solid #e7e9fc;
     box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
@@ -374,7 +374,7 @@ border-radius: 50%;
 .mibile-social-icon{
 
     fill: blue;
-    /* stroke: white; */}
+    stroke: white;}
 
 @media screen and (min-width: 768px) {
 .mobile-menu{
