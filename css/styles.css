@@ -1252,6 +1252,7 @@ button {
 .footer-cont {
   /* display: flex;
   flex-direction: column; */
+  width: 528px;
 }
 .footer-cont .container
  {
@@ -1489,12 +1490,16 @@ ul {
 }
 
 .footer-cont {
-  /* display: flex;
-  flex-direction: column; */
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  column-gap: 24px;
 }
 
 .footer-cont .container
  {
+  width: 528px;
+  
   
   /* display: flex;
   flex-direction: column; */
