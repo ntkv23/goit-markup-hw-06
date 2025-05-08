@@ -33,10 +33,14 @@
         <address class="addres">
           <ul class="contact-list">
             <li class="contacts">
-              <a href="mailto:info@devstudio.com">info@devstudio.com</a>
+              <a class="contacts-link" href="mailto:info@devstudio.com"
+                >info@devstudio.com</a
+              >
             </li>
             <li class="contacts">
-              <a href="tel:+110001111111">+11 (000) 111-11-11</a>
+              <a class="contacts-link" href="tel:+110001111111"
+                >+11 (000) 111-11-11</a
+              >
             </li>
           </ul>
         </address>
@@ -183,12 +187,17 @@
       </section>
       <!-- endregion  2 -->
       <!-- region our team -->
-      <section class="section-three hidden">
+      <section class="section-three">
         <div class="container">
           <h2 class="team-title">Our Team</h2>
           <ul class="team-flex">
             <li class="team-list">
-              <img src="./images/mark.jpg" alt="mark" width="264" />
+              <img
+                srcset="./images/mark.jpg 1x, ./images/mark@2x.jpg 2x"
+                src="./images/mark.jpg"
+                alt="mark"
+                width="264"
+              />
               <div class="profession">
                 <h3 class="team-mates">Mark Guerrero</h3>
                 <p class="devolopers">Product Designer</p>
@@ -226,7 +235,12 @@
               </div>
             </li>
             <li class="team-list">
-              <img src="./images/tom.jpg" alt="tom" width="264" />
+              <img
+                srcset="./images/tom.jpg 1x, ./images/tom@2x.jpg 2x"
+                src="./images/tom.jpg"
+                alt="tom"
+                width="264"
+              />
               <div class="profession">
                 <h3 class="team-mates">Tom Ford</h3>
                 <p class="devolopers">Frontend Developer</p>
@@ -264,7 +278,12 @@
               </div>
             </li>
             <li class="team-list">
-              <img src="./images/camila.jpg" alt="camila" width="264" />
+              <img
+                srcset="./images/camila.jpg 1x, ./images/camila@2x.jpg 2x"
+                src="./images/camila.jpg"
+                alt="camila"
+                width="264"
+              />
               <div class="profession">
                 <h3 class="team-mates">Camila Garcia</h3>
                 <p class="devolopers">Marketing</p>
@@ -302,7 +321,12 @@
               </div>
             </li>
             <li class="team-list">
-              <img src="./images/daniel.jpg" alt="daniel" width="264" />
+              <img
+                srcset="./images/daniel.jpg 1x, ./images/daniel@2x.jpg 2x"
+                src="./images/daniel.jpg"
+                alt="daniel"
+                width="264"
+              />
               <div class="profession">
                 <h3 class="team-mates">Daniel Wilson</h3>
                 <p class="devolopers">UI Designer</p>
@@ -344,14 +368,38 @@
       </section>
       <!-- endregion our team  -->
       <!-- region Our Portfolio  -->
-      <section class="section-last hidden">
+      <section class="section-last">
         <div class="container">
           <h2 class="section-last-title">Our Portfolio</h2>
 
           <ul class="last-list">
             <li class="last-list-scn">
               <div class="foto-wrap">
-                <img src="./images/bankingapp.jpg" alt="banking" width="360" />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/bankingapp.jpg      1x,
+                      ./images/appbank-desk@2x.jpg 2x
+                    "
+                    media="(min-width: 1158px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/appbank-tabl@1x.jpg 1x,
+                      ./images/appbank-tabl@2x.jpg 2x
+                    "
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/appbank@1x.jpg 1x,
+                      ./images/appbank@2x.jpg 2x
+                    "
+                    media="(max-width: 767px)"
+                  />
+                  <img src="./images/appbank@1x.jpg" alt="portfolio pictxure" />
+                </picture>
+
                 <p class="last-paragraph">
                   14 Stylish and User-Friendly App Design Concepts · Task
                   Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App
@@ -366,11 +414,28 @@
 
             <li class="last-list-scn">
               <div class="foto-wrap">
-                <img
-                  src="./images/cashlesspayment.jpg"
-                  alt="Meditation App"
-                  width="360"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/cashlesspayment.jpg 1x,
+                      ./images/cashp-desk@2x.jpg   2x
+                    "
+                    media="(min-width: 1158px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/cashp-tabl@1x.jpg 1x,
+                      ./images/cashp-tabl@2x.jpg 2x
+                    "
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="./images/cashp@1x.jpg 1x, ./images/cashp@2x.jpg 2x"
+                    media="(max-width: 767px)"
+                  />
+                  <img src="./images/cashp@1x.jpg" alt="portfolio pictxure" />
+                </picture>
+
                 <p class="last-paragraph">
                   14 Stylish and User-Friendly App Design Concepts · Task
                   Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App
@@ -385,11 +450,31 @@
 
             <li class="last-list-scn">
               <div class="foto-wrap">
-                <img
-                  src="./images/meditationapp.jpg"
-                  alt="Meditation App"
-                  width="360"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/meditationapp.jpg 1x,
+                      ./images/medidesk@2x.jpg   2x
+                    "
+                    media="(min-width: 1158px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/meditab@1x.jpg 1x,
+                      ./images/meditab@2x.jpg 2x
+                    "
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/medimob@1x.jpg 1x,
+                      ./images/medimob@2x.jpg 2x
+                    "
+                    media="(max-width: 767px)"
+                  />
+                  <img src="./images/medimob@1x.jpg" alt="portfolio pictxure" />
+                </picture>
+
                 <p class="last-paragraph">
                   14 Stylish and User-Friendly App Design Concepts · Task
                   Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App
@@ -404,11 +489,31 @@
 
             <li class="last-list-scn">
               <div class="foto-wrap">
-                <img
-                  src="./images/taxiservice.jpg"
-                  alt="Meditation App"
-                  width="360"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/taxiservice.jpg 1x,
+                      ./images/taxidesk@2x.jpg 2x
+                    "
+                    media="(min-width: 1158px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/taxitabl@1x.jpg 1x,
+                      ./images/taxitabl@2x.jpg 2x
+                    "
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/taximob@1x.jpg 1x,
+                      ./images/taximob@2x.jpg 2x
+                    "
+                    media="(max-width: 767px)"
+                  />
+                  <img src="./images/taximob@1x.jpg" alt="portfolio pictxure" />
+                </picture>
+
                 <p class="last-paragraph">
                   14 Stylish and User-Friendly App Design Concepts · Task
                   Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App
@@ -423,11 +528,34 @@
 
             <li class="last-list-scn">
               <div class="foto-wrap">
-                <img
-                  src="./images/screenillustrations.jpg"
-                  alt="Meditation App"
-                  width="360"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/screenillustrations.jpg 1x,
+                      ./images/screendesk@2x.jpg       2x
+                    "
+                    media="(min-width: 1158px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/screentab@1x.jpg 1x,
+                      ./images/screentab@2x.jpg 2x
+                    "
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/screenmob@1x.jpg 1x,
+                      ./images/screenmob@2x.jpg 2x
+                    "
+                    media="(max-width: 767px)"
+                  />
+                  <img
+                    src="./images/screenmob@1x.jpg"
+                    alt="portfolio pictxure"
+                  />
+                </picture>
+
                 <p class="last-paragraph">
                   14 Stylish and User-Friendly App Design Concepts · Task
                   Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App
@@ -442,11 +570,31 @@
 
             <li class="last-list-scn">
               <div class="foto-wrap">
-                <img
-                  src="./images/onlinecourses.jpg"
-                  alt="Meditation App"
-                  width="360"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/onlinecourses.jpg 1x,
+                      ./images/onldesk@2x.jpg    2x
+                    "
+                    media="(min-width: 1158px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/onltab@1x.jpg 1x,
+                      ./images/onltab@2x.jpg 2x
+                    "
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/onlnmob@1x.jpg 1x,
+                      ./images/onlmob@2x.jpg  2x
+                    "
+                    media="(max-width: 767px)"
+                  />
+                  <img src="./images/onlmob@1x.jpg" alt="portfolio pictxure" />
+                </picture>
+
                 <p class="last-paragraph">
                   14 Stylish and User-Friendly App Design Concepts · Task
                   Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App
@@ -463,8 +611,10 @@
       </section>
       <!-- endregion Our Portfolio -->
     </main>
-    <footer class="footer-head hidden">
-      <div class="container footer-cont">
+    <!-- footer -->
+
+    <footer class="footer-head">
+      <div class="footer-cont container">
         <div class="logo-p">
           <a href="./index.html" class="title-logo-footer"
             >Web<span class="title-span-footer">Studio</span></a
@@ -474,7 +624,7 @@
             digital marketing & growth solutions.
           </p>
         </div>
-        <div>
+        <div class="footer-social-wrap">
           <p class="footer-p">Social media</p>
           <ul class="footer-social-ul">
             <li class="footer-li">
@@ -519,12 +669,14 @@
                 placeholder="E-mail"
               />
             </label>
-            <button class="button-subscribe" type="submit">
-              Subscribe
-              <svg class="form-subscribe-icon" width="24" height="24">
-                <use href="./images/icons.svg#icon-icon-send"></use>
-              </svg>
-            </button>
+            <p class="button-position">
+              <button class="button-subscribe" type="submit">
+                Subscribe
+                <svg class="form-subscribe-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-icon-send"></use>
+                </svg>
+              </button>
+            </p>
           </form>
         </div>
       </div>
