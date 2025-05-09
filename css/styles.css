@@ -1252,7 +1252,7 @@ button {
 .footer-cont {
   /* display: flex;
   flex-direction: column; */
-  width: 528px;
+  /* width: 528px; */
 }
 .footer-cont .container {
   padding-left: 15px;
@@ -1389,9 +1389,8 @@ ul {
 
 .form-subscribe {
   display: flex;
-
-  flex-direction: column;
-
+flex-direction: column;
+000000000
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #fff;
